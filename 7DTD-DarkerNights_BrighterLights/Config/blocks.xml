@@ -1,0 +1,9 @@
+<Configs>
+  <set xpath="/blocks/block[contains(@name,'burningBarrel')]/property[@name='Light']/@value">2</set>
+  <set xpath="/blocks/block[contains(@name,'decoPumpkinJackOLantern')]/property[@name='Light']/@value">1.2</set>
+  <set xpath="/blocks/block[contains(@name,'cntWoodBurningStove')]/property[@name='Light']/@value">1.3</set>
+  <set xpath="/blocks/block[contains(@name,'emberPileLightPOI1')]/property[@name='Light']/@value">.9</set>
+  <set xpath="/blocks/block[contains(@name,'porchLight01')]/property[@name='Light']/@value">1.4</set>
+  <set xpath="/blocks/block[contains(@name,'industrialLight01')]/property[@name='Light']/@value">1.7</set>
+  <set xpath="/blocks/block[contains(@name,'candelabraLight')]/property[@name='Light']/@value">.9</set>
+</Configs>

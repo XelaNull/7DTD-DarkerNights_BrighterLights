@@ -1,0 +1,15 @@
+<Configs>
+  <!-- The source code below was pulled from:
+        Doughs-Buff-Ambiance-DarkerInside & Doughs-Buff-Ambiance-DarkerNights
+  The values provided have been adjusted slightly to better match the brighter 
+  lights portion of the modlet. -->
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">0.15</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideSpeed']/@value">.3.6</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">0.25</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">0.1</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">0.3</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">0, 0</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .4</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.4, .1</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">.9, .3</set>
+</Configs>

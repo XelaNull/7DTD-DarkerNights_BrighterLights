@@ -1,0 +1,9 @@
+<Configs>
+  <set xpath="/blocks/block[contains(@name,'meleeToolFlashlight02')]/property[@name='LightValue']/@value">1.5</set>
+  <set xpath="/blocks/block[contains(@name,'meleeToolTorch')]/property[@name='LightValue']/@value">1.3</set>
+  <set xpath="/blocks/block[contains(@name,'gunHandgun')]/property[@name='LightValue']/@value">.85</set>
+  <set xpath="/blocks/block[contains(@name,'gunShotgun')]/property[@name='LightValue']/@value">.85</set>
+  <set xpath="/blocks/block[contains(@name,'gunRifle')]/property[@name='LightValue']/@value">.85</set>
+  <set xpath="/blocks/block[contains(@name,'armorMiningHelmet')]/property[@name='LightValue']/@value">1.5</set>
+  <set xpath="/blocks/block[contains(@name,'armorMiningHelmet')]/property[@name='LightValue']/@value">.7</set>
+</Configs>
