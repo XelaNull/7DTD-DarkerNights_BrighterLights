@@ -1,4 +1,4 @@
 <configs>
   <!-- The code below was pulled from Ragsy_Brighter_Headlights_V2 and tuned -->
-  <set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/property[@name='LightValue']/@value">3</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/property[@name='LightValue']/@value">2</set>
 </configs>

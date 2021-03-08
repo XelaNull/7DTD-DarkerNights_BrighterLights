@@ -4,7 +4,7 @@
   The values provided have been adjusted slightly to better match the brighter 
   lights portion of the modlet. -->
   <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">0.15</set>
-  <set xpath="/worldglobal/environment/property[@name='ambientInsideSpeed']/@value">.3.6</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideSpeed']/@value">3.6</set>
   <set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">0.25</set>
   <set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">0.1</set>
   <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">0.3</set>

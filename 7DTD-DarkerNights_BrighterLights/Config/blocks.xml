@@ -1,9 +1,125 @@
 <Configs>
-  <set xpath="/blocks/block[contains(@name,'burningBarrel')]/property[@name='Light']/@value">3</set>
+  <append xpath="/blocks/block[contains(@name,'burningBarrelPlayer')]">
+    <property name="Light" value="15"/>
+  </append>
+  
+  <remove xpath="/blocks/block[@name='burningBarrel']" />
+  <remove xpath="/blocks/block[@name='lanternDecorLight']" />
+  <remove xpath="/blocks/block[@name='spotlightNailedDownPOI']" />
+  
+  
+  
+  <append xpath="/blocks">
+    <block name="burningBarrel">
+    	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" param1="SortOrder1,SortOrder2"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CanPickup" value="true"/>
+    	<property name="Path" value="solid"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Model" value="Entities/Lighting/barrel03_burning_playerPrefab"/>
+    	<property name="IsTerrainDecoration" value="true"/>
+    	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+    	<property name="ImposterDontBlock" value="true"/>
+    	<property name="Stacknumber" value="50"/>
+    	<property name="Class" value="TorchHeatMap"/>
+    	<property name="HeatMapStrength" value="1"/>
+    	<property name="HeatMapTime" value="4000"/>
+      <property name="Light" value="5"/>
+    	<property name="Group" value="Building,advBuilding"/>
+    	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
+    	<property name="SortOrder1" value="70a0"/>
+    	<property name="FilterTags" value="fdecor,felectrical"/>
+    </block>
+    
+    <block name="lanternDecorLight">
+    	<property name="Extends" value="porchLight01" param1="HandleFace,DescriptionKey"/>
+    	<property name="Class" value=""/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CanPickup" value="true"/>
+    	<property name="CustomIcon" value="lanternDecorLight"/>
+    	<property name="UnlockedBy" value="perkArtOfMiningLantern"/>
+    	<property name="Material" value="Mglass"/>
+    	<property name="Model" value="Entities/Lighting/lanternPlayerPrefab"/>
+    	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+    	<property name="TakeDelay" value="2"/>
+    	<property name="Group" value="Science,Building,advBuilding"/>
+    </block>
+    
+    
+    
+    <block name="spotlightNailedDownPOI">
+      <!--
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="spotlightNailedDownPOI"/>
+    	<property name="Class" value="Spotlight"/>
+    	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+    	<property name="UnlockedBy" value="perkAdvancedEngineering,spotlightPlayerSchematic"/>
+    	<property name="RuntimeSwitch" value="true"/>
+    	<property name="Material" value="Mmetal"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Path" value="solid"/>
+    	<property name="Model" value="Entities/Lighting/player_spotlightPrefab"/>
+
+    	<property name="ImposterDontBlock" value="true"/>
+    	<property name="Place" value="Spotlight"/>
+    	<property class="RepairItems">
+    		<property name="resourceElectricParts" value="6"/>
+    		<property name="resourceScrapIron" value="40"/>
+    	</property>
+    	<drop event="Harvest" name="resourceScrapIron" count="24,30" tag="allHarvest"/>
+    	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
+    	<drop event="Destroy" count="0"/>
+    	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    	<property name="OnlySimpleRotations" value="true"/>
+    	<property name="IsTerrainDecoration" value="true"/>
+    	<property name="EconomicValue" value="310"/>
+    	<property name="Group" value="Science"/>
+    	<property name="TakeDelay" value="10"/>
+    	<property name="PickupJournalEntry" value="cameraTip"/>
+    	<property name="FilterTags" value="fdecor,felectrical"/>
+    	<property name="SortOrder1" value="70a0"/>
+    -->
+      <!--<property name="Class" value="Light"/>-->
+      
+      <property name="Light" value="5"/>
+      <property name="Class" value="Light"/>
+      <property name="RuntimeSwitch" value="true"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="TakeDelay" value="10"/>
+
+
+
+      <property name="CreativeMode" value="Dev"/>
+      <property name="DescriptionKey" value="lightPOIGroupDesc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Path" value="solid"/>
+      <property name="Model" value="Entities/Lighting/player_spotlightPrefab"/>
+      <property name="Place" value="Spotlight"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property class="RepairItems">
+        <property name="resourceElectricParts" value="6"/>
+        <property name="resourceScrapIron" value="40"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="24,30" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <!--<property name="TakeDelay" value="-1"/>-->
+      <property name="Group" value="Science"/>
+      <property name="FilterTags" value="fdecor,felectrical"/>
+      <property name="SortOrder1" value="70a0"/>
+    </block>
+  </append>
+  
+  
   <set xpath="/blocks/block[contains(@name,'decoPumpkinJackOLantern')]/property[@name='Light']/@value">1.2</set>
-  <set xpath="/blocks/block[contains(@name,'cntWoodBurningStove')]/property[@name='Light']/@value">1.6</set>
   <set xpath="/blocks/block[contains(@name,'emberPileLightPOI1')]/property[@name='Light']/@value">2.2</set>
-  <set xpath="/blocks/block[contains(@name,'porchLight01')]/property[@name='Light']/@value">2.2</set>
-  <set xpath="/blocks/block[contains(@name,'industrialLight01')]/property[@name='Light']/@value">2.9</set>
-  <set xpath="/blocks/block[contains(@name,'candelabraLight')]/property[@name='Light']/@value">1.4</set>
+  <set xpath="/blocks/block[contains(@name,'porchLight01')]/property[@name='Light']/@value">5</set>
+  <set xpath="/blocks/block[contains(@name,'industrialLight01')]/property[@name='Light']/@value">6</set>
+  <set xpath="/blocks/block[contains(@name,'candelabraLight')]/property[@name='Light']/@value">4</set>
 </Configs>
