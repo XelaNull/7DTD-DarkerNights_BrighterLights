@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
 		<Name value="Darker Nights and Brighter Lights" />
+		<DisplayName value="Darker Nights and Brighter Lights" />
 		<Description value="Make the nights darker and scarier, and all light sources brighter to compensate." />
 		<Author value="Shouden Kalferas, doughphungus, Ragsy, Manux, and Guppycur"/>
-		<Version value="A19.3_1.0" />
+		<Version value="1.0_1.0a" />
 		<Website value="https://github.com/XelaNull/7DTD-DarkerNights_BrighterLights" />
-	</ModInfo>
 </xml>
