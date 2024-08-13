@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="Darker Nights and Brighter Lights" />
+		<Name value="DarkerNightsandBrighterLights" />
 		<DisplayName value="Darker Nights and Brighter Lights" />
 		<Description value="Make the nights darker and scarier, and all light sources brighter to compensate." />
 		<Author value="Shouden Kalferas, doughphungus, Ragsy, Manux, and Guppycur"/>
-		<Version value="1.0_1.0a" />
+		<Version value="1.0.1.1" />
 		<Website value="https://github.com/XelaNull/7DTD-DarkerNights_BrighterLights" />
 </xml>
