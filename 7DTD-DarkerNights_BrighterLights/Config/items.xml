@@ -4,5 +4,5 @@
   <set xpath="/items/item[contains(@name,'gunHandgun')]/property[@name='LightValue']/@value">.85</set>
   <set xpath="/items/item[contains(@name,'gunShotgun')]/property[@name='LightValue']/@value">.85</set>
   <set xpath="/items/item[contains(@name,'gunRifle')]/property[@name='LightValue']/@value">.85</set>
-  <set xpath="/items/item[contains(@name,'armorMiningHelmet')]/property[@name='LightValue']/@value">1.5</set>
+  <!--<set xpath="/items/item[contains(@name,'armorMiningHelmet')]/property[@name='LightValue']/@value">1.5</set>-->
 </Configs>

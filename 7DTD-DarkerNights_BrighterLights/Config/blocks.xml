@@ -3,11 +3,9 @@
     <property name="Light" value="15"/>
   </append>
 
-    <set xpath="/recipes/recipe[starts-with(@name, 'vehicleTruck4x4')]/@craft_time">105</set>
-
   <remove xpath="/blocks/block[starts-with(@name, 'burningBarrel')]"/>
-  <remove xpath="/blocks/block[starts-with(@name, 'lanternDecorLight')]"/>
-  <remove xpath="/blocks/block[starts-with(@name, 'spotlight')] and contains(@name, 'POI')" />
+  <!--<remove xpath="/blocks/block[starts-with(@name, 'lanternDecorLight')]"/>-->
+  <remove xpath="/blocks/block[starts-with(@name, 'spotlight') and contains(@name, 'POI')]" />
   
   
   
@@ -121,7 +119,7 @@
   
   <set xpath="/blocks/block[contains(@name,'decoPumpkinJackOLantern')]/property[@name='Light']/@value">1.2</set>
   <set xpath="/blocks/block[contains(@name,'emberPileLightPOI1')]/property[@name='Light']/@value">2.2</set>
-  <set xpath="/blocks/block[contains(@name,'lightPorchBlack')]/property[@name='Light']/@value">5</set>
+  <set xpath="/blocks/block[contains(@name,'lightPorch')]/property[@name='Light']/@value">5</set>
   <set xpath="/blocks/block[contains(@name,'industrialLight01')]/property[@name='Light']/@value">6</set>
   <!--<set xpath="/blocks/block[contains(@name,'candelabraLight')]/property[@name='Light']/@value">4</set>-->
 </Configs>
