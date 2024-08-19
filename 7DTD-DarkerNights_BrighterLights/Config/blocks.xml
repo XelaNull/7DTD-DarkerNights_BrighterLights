@@ -2,10 +2,12 @@
   <append xpath="/blocks/block[contains(@name,'burningBarrelPlayer')]">
     <property name="Light" value="15"/>
   </append>
-  
-  <remove xpath="/blocks/block[@name='burningBarrel']" />
-  <remove xpath="/blocks/block[@name='lanternDecorLight']" />
-  <remove xpath="/blocks/block[@name='spotlightNailedDownPOI']" />
+
+    <set xpath="/recipes/recipe[starts-with(@name, 'vehicleTruck4x4')]/@craft_time">105</set>
+
+  <remove xpath="/blocks/block[starts-with(@name, 'burningBarrel')]"/>
+  <remove xpath="/blocks/block[starts-with(@name, 'lanternDecorLight')]"/>
+  <remove xpath="/blocks/block[starts-with(@name, 'spotlight')] and contains(@name, 'POI')" />
   
   
   
@@ -32,7 +34,7 @@
     </block>
     
     <block name="lanternDecorLight">
-    	<property name="Extends" value="porchLight01" param1="HandleFace,DescriptionKey"/>
+    	<property name="Extends" value="lightPorchBlack" param1="HandleFace,DescriptionKey"/>
     	<property name="Class" value=""/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CanPickup" value="true"/>
@@ -119,7 +121,7 @@
   
   <set xpath="/blocks/block[contains(@name,'decoPumpkinJackOLantern')]/property[@name='Light']/@value">1.2</set>
   <set xpath="/blocks/block[contains(@name,'emberPileLightPOI1')]/property[@name='Light']/@value">2.2</set>
-  <set xpath="/blocks/block[contains(@name,'porchLight01')]/property[@name='Light']/@value">5</set>
+  <set xpath="/blocks/block[contains(@name,'lightPorchBlack')]/property[@name='Light']/@value">5</set>
   <set xpath="/blocks/block[contains(@name,'industrialLight01')]/property[@name='Light']/@value">6</set>
-  <set xpath="/blocks/block[contains(@name,'candelabraLight')]/property[@name='Light']/@value">4</set>
+  <!--<set xpath="/blocks/block[contains(@name,'candelabraLight')]/property[@name='Light']/@value">4</set>-->
 </Configs>
